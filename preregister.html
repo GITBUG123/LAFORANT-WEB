@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="function.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <title>Laforant Pre-Register</title>
+    <link rel = "icon" href = "./images/Layer 1.png">
+</head>
+
+<body class="body-register">
+    
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/Layer 1.png" width="64px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a class="actived" href="preregister.html">Pre-Register</a></li>
+                        <li><a href="systemrequirement.html">System Requirement</a></li>
+                    </ul>
+                </nav>
+
+                <!-- <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> -->
+
+                <div id="mySidenav" class="sidenav">
+                    <div class="top-sidenav">
+                        <a href="index.html">
+                            <img src="./images/Layer 1.png" width="64px">
+                        </a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                    </div>
+                    
+                    <a href="index.html">Home</a>
+                    <a href="agents.html">Agents</a>
+                    <a href="#" class="dropdown-btn">Game &#10597;</a>
+                    <div class="dropdown-container">
+                        <a href="maps.html">Maps</a>
+                        <a href="systemrequirement.html">System Requirement</a>
+                    </div>
+                    <a href="preregister.html">Pre-Register</a>
+                </div>
+
+                <div class="margin-l-r-25">
+                    <span id="menuBtn" class="menu-btn-style"onclick="openNav()">&#9776;</span>
+                </div>
+            </div>      
+        </div>
+    </header>
+        
+    <div class="container">
+        <div class="container-form">
+
+            <h1 class="white h1-title f-size-maps uppercase line-height">Register</h1>
+            <hr class="hr-title">
+            <br>
+            <form action="#" method="POST" onSubmit="validasi()">
+                <div>
+                    <label class="white uppercase line-height" for="email">email: </label>
+                    <input type="email" class="input-form form-control" placeholder="Email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label class="white uppercase line-height" for="username">Username:</label>
+                    <input type="text" class="input-form form-control" placeholder="Username" name="username" id="username" required>
+                </div>
+                <div>
+                    <label class="white uppercase line-height" for="password">Password:</label>
+                    <input type="password" class="input-form form-control" placeholder="Password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required>
+                </div>
+                <div>
+                    <label class="white uppercase line-height" for="dateofbirth">Date of Birth:</label>
+                    <input type="datetime" class="input-form form-control" placeholder="Date of Birth" name="dateofbirth" id="dateofbirth">
+                </div>
+                <div>
+                    <label class="white uppercase line-height" for="nationality">Nationality:</label>
+                    <input type="nationality" class="input-form form-control" placeholder="Nationality" name="nationality" id="nationality">
+                </div>
+                <div>
+                    <input type="checkbox" name="terms" class="left1kpx">
+                    <label class="white text-center" for="term">I agree to the terms & condition</label>
+                </div>
+                <div class="text-center">
+                    <button type="submit" name="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        
+        </div>
+        </br>
+        </br>
+    </div>
+
+    <!-- ----footer---- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1"> 
+                    <span><img src="./images/T.png"></span>
+                    <br>
+                    <div class="footer-col-1-2">Blood<br>Language<br>Violence<br>Users Interact<br>In-Game Purchases<br></div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="./images/Layer 1.png" width="90px"></a>
+                    </div>
+                        
+                    
+                    <p>Our Purpose Is To Sustainably Make The Pleasure and Benefits of Sports Accesible to the Many.</p>
+                    <br>
+                    <p>Follow Us:</p>
+                    <div class="flex-row">
+                        <a href="https://web.facebook.com" target="blank">
+                            <img class="img-size4" src="./images/facebook.png" alt="facebook">
+                        <a>
+                            <br>
+                        <a href="https://twitter.com" target="blank">
+                            <img class="img-size4" src="./images/twitter.png" alt="twitter">
+                        </a>
+                            <br>
+                        <a href="https://www.instagram.com" target="blank">
+                            <img class="img-size4" src="./images/instagram.png" alt="instagram">
+                        </a>
+                            <br>
+                        <a href="https://www.youtube.com" target="blank">
+                            <img class="img-size4" src="./images/youtube.png" alt="youtube">
+                        </a>
+                            <br>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Binus Marketing @Tugas 2021</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

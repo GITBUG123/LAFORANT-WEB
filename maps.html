@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemaps.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="function.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Laforant Maps</title>
+    <link rel = "icon" href = "./images/Layer 1.png">
+
+</head>
+
+<body class="body-maps">
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/Layer 1.png" width="64px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                        <li><a class="actived" href="maps.html">Maps</a></li>
+                        <li><a href="preregister.html">Pre-Register</a></li>
+                        <li><a href="systemrequirement.html">System Requirement</a></li>
+                    </ul>
+                </nav>
+
+                <!-- <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> -->
+
+                <div id="mySidenav" class="sidenav">
+                    <div class="top-sidenav">
+                        <a href="index.html">
+                            <img src="./images/Layer 1.png" width="64px">
+                        </a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                    </div>
+                    
+                    <a href="index.html">Home</a>
+                    <a href="agents.html">Agents</a>
+                    <a href="#" class="dropdown-btn">Game &#10597;</a>
+                    <div class="dropdown-container">
+                        <a href="maps.html">Maps</a>
+                        <a href="systemrequirement.html">System Requirement</a>
+                    </div>
+                    <a href="preregister.html">Pre-Register</a>
+                </div>
+
+                <div class="margin-l-r-25">
+                    <span id="menuBtn" class="menu-btn-style"onclick="openNav()">&#9776;</span>
+                </div>
+            </div>      
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="white h1-title f-size-maps uppercase line-height">Maps</h1>
+        <hr class="hr-title">
+        <br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="card center transform-1">
+                    <div class="row">
+                        <div class="angkaBingkai transform-1 white">01 / 03</div>
+                        <div class="maps-contain">
+                            <div class="half d-flex">
+                                <img src="./images/iceworld.png" alt="avatar" class="img-size-maps">
+                            </div>
+                                
+                            <div class="half-2">
+                                <br class="boom-800">
+                                <h1 class="white f-size-maps">Assault</h1>
+                                <p class="white judul2 margin-50px">Your next battleground is a secret Kingdom excavation site overtaken by the arctic. The two plant sites protected by snow and metal require some horizontal finesse. Take advantage of the ziplines and they’ll never see you coming.</p>
+                            </div>  
+                        </div>
+                    </div>
+                    <br>
+                    <div class="padding-container transform-1 d-flex justify-center">
+                        <div class="img12-container-padding padd-08px">
+                            <img class="hover-opct" src="./images/assault-map-location3.jpeg" onclick="show(this)" >
+                        </div>
+
+                        <div class="img12-container-padding padd-08px">
+                            <img src="./images/assault-map-location2.jpeg" onclick="show(this)" class="hover-opct">
+                        </div>
+
+                        <div class="img12-container-padding padd-08px">
+                            <img src="./images/assault-map-location.jpeg" onclick="show(this)" class="hover-opct">
+                        </div>
+                    </div>
+                    
+                    <br>
+
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="card center transform-1">
+                    <div class="row">
+                        <div class="angkaBingkai transform-1 white">02 / 03</div>
+
+                        <div class="maps-contain">
+                            <div class="half d-flex">
+                                <img src="./images/haschi.png" alt="avatar" class="img-size-maps">
+                            </div>
+                                
+                            <div class="half-2">
+                                <br class="boom-800">
+                                <h1 class="white f-size-maps">Haschi</h1>
+                                <p class="white judul2 margin-50px">Beneath a forgotten monastery, a clamour emerges from rival Agents clashing to control three sites. There’s more territory to control, but defenders can use the extra real estate for aggressive pushes.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="padding-container transform-1 d-flex justify-center">
+                        <div class="img12-container-padding padd-08px">
+                            <img class="hover-opct" src="./images/haschi-map-location4.jpeg" onclick="show(this)" >
+                        </div>
+
+                        <div class="img12-container-padding padd-08px">
+                            <img src="./images/haschi-map-location5.jpeg" onclick="show(this)" class="hover-opct ">
+                        </div>
+
+                        <div class="img12-container-padding padd-08px">
+                            <img src="./images/haschi-map-location.png" onclick="show(this)" class="hover-opct ">
+                        </div>
+                    </div>
+
+                    
+
+                    <br>
+                    
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="card center transform-1">
+                    <div class="row">
+                        <div class="angkaBingkai transform-1 white">03 / 03</div>
+                        <div class="maps-contain">
+                            <div class="half d-flex">
+                                <img src="./images/cityQ.png" alt="avatar" class="img-size-maps">
+                            </div>
+                                
+                            <div class="half-2">
+                                <br class="boom-800">
+                                <h1 class="white f-size-maps">CityQ</h1>
+                                <p class="white judul2 margin-50px">If you want to go far, you’ll have to go up. A pair of sites split by an elevated center allows for rapid movement using two rope ascenders. Each site is built with a looming tower vital for control. Remember to watch above before it all blows sky-high.</p>
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="padding-container transform-1 d-flex justify-center">
+                            <div class="img12-container-padding padd-08px">
+                                <img class="hover-opct" src="./images/CityQ-map-location3.jpeg" onclick="show(this)" >
+                            </div>
+
+                            <div class="img12-container-padding padd-08px">
+                                <img src="./images/CityQ-map-location4.jpeg" onclick="show(this)" class="hover-opct">
+                            </div>
+
+                            <div class="img12-container-padding padd-08px">
+                                <img src="./images/CityQ-map-location.png" onclick="show(this)" class="hover-opct">
+                            </div>
+                    </div>
+                    
+                    <br>
+                </div>
+            </div>
+
+            <div id="xcross" class="img-display" onclick= "this.style.display='none'">
+                <span class="button-play red-hover-display f-large-size x-top">&times;</span>
+                <div class="content-box zoom-fit">
+                    <img id="imgnow">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        
+        <br>
+
+        <div class="text-center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+
+    <!-- ----footer---- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1"> 
+                    <span><img src="./images/T.png"></span>
+                    <br>
+                    <div class="footer-col-1-2">Blood<br>Language<br>Violence<br>Users Interact<br>In-Game Purchases<br></div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="./images/Layer 1.png" width="90px"></a>
+                    </div>
+                        
+                    
+                    <p>Our Purpose Is To Sustainably Make The Pleasure and Benefits of Sports Accesible to the Many.</p>
+                    <br>
+                    <p>Follow Us:</p>
+                    <div class="flex-row">
+                        <a href="https://web.facebook.com" target="blank">
+                            <img class="img-size4" src="./images/facebook.png" alt="facebook">
+                        <a>
+                            <br>
+                        <a href="https://twitter.com" target="blank">
+                            <img class="img-size4" src="./images/twitter.png" alt="twitter">
+                        </a>
+                            <br>
+                        <a href="https://www.instagram.com" target="blank">
+                            <img class="img-size4" src="./images/instagram.png" alt="instagram">
+                        </a>
+                            <br>
+                        <a href="https://www.youtube.com" target="blank">
+                            <img class="img-size4" src="./images/youtube.png" alt="youtube">
+                        </a>
+                            <br>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Binus Marketing @Tugas 2021</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
